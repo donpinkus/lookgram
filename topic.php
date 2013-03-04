@@ -24,6 +24,7 @@
 
 	</head>
 	<body id="topic">
+		<?php require_once("build/includes/analyticstracking.php"); ?>
 		<div class="page">
 			<header class="top-nav">
 				<div class="wrapper">

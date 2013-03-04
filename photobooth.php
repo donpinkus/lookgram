@@ -4,6 +4,7 @@
 <head>
 </head>
 <body>
+	<?php require_once("build/includes/analyticstracking.php"); ?>
 	<div class="photobooth-photo-page" data-photo-id="<?php echo $_GET['photo_id']; ?>">
 		<div class="photobooth-photo-container">
 			<?php 
