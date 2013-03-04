@@ -11,18 +11,19 @@
 
     <!-- main JS -->
     <script src="js/main.js" type="text/javascript"></script>
-    <!-- photofeed JS -->
-    <script src="js/photofeed.js" type="text/javascript"></script>
+    <!-- topic-page JS -->
+    <script src="js/topic-page.js" type="text/javascript"></script>
     <!-- photobooth JS -->
     <script src="js/photobooth.js" type="text/javascript"></script>
     
-    <!-- newsfeed page -->
-    <title>Lookgr.am</title>
+    <!-- topic page -->
+    <title>Lookgr.am Topic</title>
 
     <!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
 	</head>
-	<body id="photofeed">
+	<body id="topic">
 		<div class="page">
 			<header class="top-nav">
 				<div class="wrapper">
@@ -49,7 +50,10 @@
 			</header>
 			<div class="main">
 					<?php 
-						$photofeed = new Photofeed()
+						// Topic page controller prints out the topic page.
+					  // Uses $_GET array to determine topic.
+					  // Takes gender, article, and brand values.
+						$topic_page = new TopicPageController()
 					?>
 			</div>
 		</div>

@@ -1,0 +1,545 @@
+/*
+Document   : main
+Created on : Jan 24, 2012, 10:31:03 AM
+Author     : Don Pinkus
+Description: Main stylesheet for Lookgr.am.
+*/
+
+// Temp ID wrapper to override base foundation styles
+
+html {
+	background: #edeeef;
+}
+
+#lookgram{
+
+@font-face {
+	font-family: 'entypo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/entypo.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'entypo_social';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/entypo-social.woff') format('woff');
+}	
+
+margin: 0;
+font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+
+
+/*  -----------------------------------------------------------------------------
+	::  Typography
+	----------------------------------------------------------------------------- */
+
+h1{
+	font-size: 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+$topnav-text-color: rgb(233, 233, 233);
+
+
+/*  -----------------------------------------------------------------------------
+	::  Grid
+	----------------------------------------------------------------------------- */
+
+
+/*  -----------------------------------------------------------------------------
+	::  Core Elements
+	----------------------------------------------------------------------------- */
+
+.top-nav {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	height: 44px;
+	text-align: center;
+
+	background-color: #517fa4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#517fa4), to(#306088));	
+	border-bottom: 1px solid #1c5380;
+	border-bottom-color: rgba(4,40,71,0.8);
+
+	@include box-shadow(rgba(111,151,182,0.5) 0 1px 0 inset, rgba(111,151,182,0.2) 0 -1px 0 inset, rgba(0,0,0,.2) 0px 1px 1px);
+
+	.wrapper {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+
+		h1 {
+			display: inline-block;
+			padding-top: 5px;
+
+			a {
+				text-decoration: none;
+				text-shadow: 1px 1px 1px rgb(50,50,50);
+				color: rgb(243, 243, 243);
+			}
+		}
+	} // Closes .wrapper
+}
+
+
+/*  -----------------------------------------------------------------------------
+	::  Classes
+	----------------------------------------------------------------------------- */
+
+.page {
+
+	// This is the top nav bar.
+	> header {
+		.blue-button {
+			display: inline-block;
+			padding: 5px 0px 6px 0px;
+			position: relative;
+
+			color: $topnav-text-color;
+			line-height: 14px;
+			text-align: center;
+			font-weight: bold;
+			text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;	
+
+			background-image: -webkit-linear-gradient(top, rgb(111, 151, 182), rgb(63, 114, 155));
+			border: 1px solid rgb(28, 83, 128);
+			border-radius: 3px;	
+			box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px, rgba(255, 255, 255, 0.0470588) 1px 0px 0px 0px inset, rgba(255, 255, 255, 0.0470588) -1px 0px 0px 0px inset, rgba(0, 0, 0, 0.0784314) 0px 1px 0px 0px inset;
+			
+			cursor: pointer;
+		}
+
+		.home-button{
+			position: absolute;
+			left: 0px;
+			padding: 0px 11px 13px 12px;	
+			height: 32px;
+			font-family: entypo; 
+
+			border-left: 1px solid rgba(0,0,0,0.1);
+			border-right: 1px solid #06365f;
+			border-right-color: rgba(0,0,0,0.1);
+			@include box-shadow(rgba(255,255,255,.1) inset 1px 0 0);
+			
+			text-shadow: 0 1px 0 rgba(3,27,47,0.5);
+			color: $topnav-text-color;
+			font-size: 45;
+
+			&.selected {
+				background-color: rgba(6,54,95,0.35);
+			}
+
+			// Handles background color on all non-home pages.
+			&:hover {
+				background-color: rgba(6,54,95,0.35);
+			}
+		}
+
+		.account-state {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			font-weight: bold;
+
+			a, a:hover, a:active{
+				color: $topnav-text-color;
+			}
+			
+			p, .action{
+				float: right;
+				display: inline;
+			}
+			p{
+				padding: 8px 0 0 15px;
+				text-shadow:0 1px 0 rgba(0,0,0,0.3);
+			}
+			ul{
+				margin:0;
+				padding:0
+			}
+			> ul{
+				border-right: 1px solid #5786aa;
+				border-right-color: rgba(255,255,255,0.1);
+				border-left: 1px solid #06365f;
+				border-left-color: rgba(0,0,0,0.1);
+				> li{
+					position: relative;
+					float: left;
+					display: inline;
+					margin: 0;
+					> a{
+						position:relative;
+						display:block;
+						height:18px;
+						padding:14px 11px 13px 12px;
+						border-right:1px solid #06365f;
+						border-right-color:rgba(0,0,0,0.1);
+						-webkit-box-shadow:inset 1px 0 0 rgba(255,255,255,.1);
+						-moz-box-shadow:inset 1px 0 0 rgba(255,255,255,.1);
+						-ms-box-shadow:inset 1px 0 0 rgba(255,255,255,.1);
+						-o-box-shadow:inset 1px 0 0 rgba(255,255,255,.1);
+						box-shadow:inset 1px 0 0 rgba(255,255,255,.1);
+						text-shadow:0 1px 0 rgba(3,27,47,0.5);
+						-webkit-tap-highlight-color:rgba(0,0,0,0);
+
+						&:hover{
+							background:url(../../images/alpha/fff_10.png);
+							background:rgba(255,255,255,0.1);
+							border-right-color:rgba(0,0,0,0.15);
+						}
+						i{
+							display:block;
+							float:left;
+							height:28px;
+							width:28px;
+							margin:-7px 6px 0 -4px
+						}
+					}
+				}
+			}
+
+			.link-signin i{
+				background: url(../images/glyph-assets.png) no-repeat 2px 3px;
+			}
+
+			// When logged-in, clicking the user name button creates a dropdown. 
+			.dropdown{
+				right: 1px;
+				top: 38px;
+				position: absolute;
+				padding: 10px 0 0;
+				-webkit-transition: opacity 0.2s ease-out, margin 0.2s ease-out;
+				-moz-transition: opacity 0.2s ease-out, margin 0.2s ease-out;
+				-o-transition: opacity 0.2s ease-out, margin 0.2s ease-out;
+				transition: opacity 0.2s ease-out, margin 0.2s ease-out;
+				margin: 0;
+				opacity: 0.99;
+				pointer-events: all;
+				text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+				font-weight: bold;
+				z-index: 100;	
+				text-align: left;
+
+				&.hidden {
+					visibility: hidden;
+				}
+
+				ul{
+					min-width: 130px;
+					background: #eee url(../images/white-gradient-300px.png) repeat-x 0 0;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					-khtml-border-radius: 3px;
+					border-radius: 3px;
+					-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95), 0 1px 8px rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.08);
+					-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95), 0 1px 8px rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.08);
+					-ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95), 0 1px 8px rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.08);
+					-o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95), 0 1px 8px rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.08);
+					box-shadow: inset 0 1px 0 rgba(255,255,255,0.95), 0 1px 8px rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.08);
+					padding: 1px 3px;
+					list-style: none;
+
+
+					li {
+						white-space: nowrap;
+						padding: 5px 0 0;
+						margin: 0 0 5px;
+						border-top: 1px solid #eee;
+						-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95);
+						-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95);
+						-ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95);
+						-o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.95);
+						box-shadow: inset 0 1px 0 rgba(255,255,255,0.95);
+
+						&:first-child {
+							border-top: none;
+							-webkit-box-shadow: none;
+							-moz-box-shadow: none;
+							-ms-box-shadow: none;
+							-o-box-shadow: none;
+							box-shadow: none;
+						}
+
+						&:hover {
+							background: rgba(244,244,244,0.6);
+						}
+					}
+				}
+
+				a {
+					color: #666;
+					display: block;
+					padding: 4px 8px 4px 8px;
+					margin: -3px 0px -3px;
+					border: 1px solid transparent;
+					-webkit-border-radius: 2px;
+					-moz-border-radius: 2px;
+					-khtml-border-radius: 2px;
+					border-radius: 2px;
+
+					&:hover {
+						color: #666;
+					}
+				}
+			} // Closes .dropdown
+
+			// When logged in, there is an add photo button.
+			.add-prompt {
+				font-family: entypo; 
+				font-size: 40px;
+				line-height: 15px;
+				padding-right: 8px;
+			}
+		}
+	} // Closes .page > header
+
+	.main {
+		padding-top: 40px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* Fancyboxes for logging in */
+.fancybox-skin {
+	background-color: transparent;
+
+	.loginFancybox {
+		margin: 0px;
+		padding: 0px;
+		width: 430px;
+	
+		.loginHeader {
+			background: #FFFFFF;
+			height: 46px;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			padding-top: 20px;
+			padding-left: 30px;
+
+			h1 {
+				font-weight: bold;
+				color: #33383D;
+				font-size: 24px;
+			}
+		}
+
+		.loginForm {
+			background: #F7F7F7;
+			border-top: 1px solid #EEE;
+			border-bottom: 1px solid #EEE;
+			height: 190px;
+			width: 370px;
+			padding: 30px;
+
+			.loginItem input{
+				width: 368px;
+				height: 50px;
+				padding: 15px;
+				margin-bottom: 30px;
+				border: 1px solid #EAEAEA;
+				border-radius: 4px;
+				background: #EAEAEA;
+				color: #9A9DA1;
+			
+				&:focus {
+					background: white;
+					color: rgb(90, 90, 90);
+					outline: none;
+				}
+
+				&:hover {
+					border-color: rgb(160, 160, 160);
+				}
+
+				&.filledOut {
+					color: rgb(90, 90, 90);
+				}
+			}
+		}
+
+		.loginSubmit {
+			width: 370;
+			height: 57px;
+			padding: 20px 30px 0px 30px;
+			background: white;
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+
+			button {
+				background-color: #4090BA;
+				border-radius: 4px;
+				color: white;
+				font-weight: bold;
+				font-size: 13px;
+				line-height: 12px;
+				height: 37px;
+				width: 104px;
+				padding: 12px 15px;
+				border: none;
+				text-align: center;
+				vertical-align: middle;
+				cursor: pointer;
+
+				&:hover {
+					background-color: #3A82A8;
+				}
+			} // Closes .button
+		} // Closes .loginSubmit
+	} // Closes .loginFancybox
+} // Closes .fancyboxskin
+
+/* Fancybox for Photo upload */
+.upload-photo-page {
+	width: 613px;
+	margin: 0px;
+	padding: 0px;
+
+	.lightbox-header {
+		background-image: -webkit-linear-gradient(top, rgb(255, 252, 252), rgb(240, 237, 237));
+		height: 46px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		padding-top: 20px;
+		padding-left: 30px;
+		font-size: 21px;
+		font-weight: bold;
+		color: rgb(140, 126, 126);
+		text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+		border-bottom: 1px solid rgb(204, 202, 202);
+	}
+
+	.lightbox-content {
+		background: #fcf9f9;
+
+		.upload-button-container {
+			height: 40px;
+			border-bottom: 1px solid rgb(220, 220, 220);
+			padding: 30px 30px 20px 30px;
+		}
+
+		.upload-meta-container {
+			position: relative;
+			min-height: 183px;
+			padding: 30px 30px 20px 30px;
+			overflow: hidden;
+
+			.image-preview {
+				float: left;
+				clear: none;
+				width: 130px;
+				min-height: 85px;
+				padding: 0;
+				margin-right: 30px;
+				overflow: hidden;
+				background-color: #fff;
+				box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+				-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+				-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+
+				img {
+					max-width: 170px;
+					box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+					-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+					-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+					border-radius: 3px;
+				}
+			}
+
+			.right-column {
+				float: left;
+				clear: none;
+				width: 375px;
+
+				.image-description {
+					textarea {
+						width: 350px;
+						height: 60px;
+						padding: 6px 12px 6px 12px;
+						border: 1px solid #ad9c9c;
+						border-radius: 6px;
+						box-shadow: inset 0 1px rgba(34,25,25,0.15),0 1px #fff;
+						outline: none;
+						resize: none;
+						color: rgb(197, 188, 188);
+						line-height: 23px;
+
+						&:focus {
+							border-color: #a4baca;
+							background: #f5f7f9;
+							outline: none;
+							color: rgb(20,20,20);
+						}
+					}
+				} // Closes .image-description
+
+				.image-tagger {
+					display: block;
+					margin-top: 20px;
+
+					input {
+						width: 100px;
+					}
+
+					.add-tag {
+						border-radius: 3px;
+						border: 1px solid #d1cdcd;
+						background: #f2f0f0;
+						padding: 8 15;
+						display: inline-block;
+						color: #d1cdcd;
+						-webkit-box-shadow: 0 1px rgba(255,255,255,0.8),inset 0 1px rgba(255,255,255,0.35);
+					}
+				}
+
+				.image-post {
+					margin-top: 20px;
+					font-size: 16px;
+					font-weight: bold;
+					padding: 10 15;
+				} 
+			} // Closes .right-column
+		} // Closes .upload-meta-container
+	} // Closes .lightbox-content
+}
+
+.footer {
+	width: 960px;
+	padding-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+
+	li {
+		float: left;
+		margin-right: 20px;
+	
+		a {
+			color: #3f729b;
+			font-size: 13px;
+			font-weight: bold;
+			text-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
+		
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	span {
+		float: right;
+		font-size: 13px;
+		font-weight: bold;
+		color: rgb(180, 180, 180);
+		text-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
+	}
+} // Closes .footer
+
+}
+

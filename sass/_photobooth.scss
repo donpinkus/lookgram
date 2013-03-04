@@ -1,0 +1,211 @@
+/* Photobooth */
+#lookgram{
+
+.fancybox-inner, .fancybox-outer, .fancybox-skin, .fancybox-wrap {
+	width: 100%;
+	background-color: transparent;
+
+	.photobooth-photo-page {
+		position: relative;
+		overflow: hidden;
+	
+		.photobooth-photo-container {
+			position: relative;
+			display: block;
+			width: 612px;
+			height: 612px;
+			line-height: 612px;
+			text-align: center;
+			background: rgb(15, 15, 15);
+			-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+			-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+			-ms-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+			-o-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+			box-shadow: 0 1px 3px rgba(0,0,0,.2);
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+
+			> img {
+				display: inline-block;
+				max-width: 612px;
+				max-height: 612px;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;	
+				vertical-align: middle; 
+				line-height: 612px;
+			}
+		}
+
+		.photobooth-social-container {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 312px;
+			height: 612px;
+			background-color: rgb(248, 248, 248);
+
+			.photobooth-favorites-container {
+				position: relative;
+				height: 50px;
+				width: 100%;
+				-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.8);
+				-moz-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.8);
+				-ms-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.8);
+				-o-box-shadow: inset 0 -1px 0 rgba(255,255,255,0.8);
+				box-shadow: inset 0 -1px 0 rgba(255,255,255,0.8);
+				border-bottom: 1px solid #eaeaea;
+				
+				.photobooth-favorites-count {
+					color: rgb(63, 114, 155);
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 50px;
+					padding-left: 43px;
+					padding-right: 15px;
+					background: url(../images/photo-page-assets.png) no-repeat 17px -383px;
+					border-right: 1px solid rgb(220,220,220);
+					display: inline-block;
+				}
+			}
+
+			.photobooth-conversation-container {
+
+				> ul {
+					max-height: 407px;
+					overflow: auto;
+				}
+
+				.photobooth-comment {
+					position: relative;
+					padding: 10px 10px 10px 50px;
+					margin: 0 2px 2px 1px;
+					width: auto;
+					word-wrap: break-word;
+					font-size: 14px;
+					border-bottom: 1px solid #ddd;
+
+					// This is the user's description of the photo. 
+					// It uses some comment styles... maybe. 
+					&.photobooth-conversation-caption {
+						padding-left: 10px;
+						border-bottom: 1px solid #ddd;
+						margin-bottom: 0;
+						background: #fcfcfc;
+					
+						.caption-tag {
+							padding-top: 5px;
+							padding-bottom: 5px;
+							padding-left: 10px;
+							padding-right: 10px;
+							margin-left: -10px;
+							margin-right: -10px;
+							cursor: pointer;
+
+							&:nth-of-type(1) {
+								margin-top: 10px;
+							}
+
+							&:hover {
+								background: #f5f7f9;
+							}
+
+							.crosshair {
+								font-family: "entypo";
+								font-size: 25px;
+								padding-right: 3px;
+							}
+
+							a {
+								color: rgb(63, 114, 155);
+							
+								&:hover {
+									text-decoration: underline;
+								}
+							}
+						} // Closes .caption-tag
+					} // Closes .photobooth-conversation-caption
+
+					.username {
+						display: block;
+						margin-bottom: 2px;
+		
+						a {
+							color: rgb(63, 114, 155);
+							font-size: 14px;
+				
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}
+
+					.comment-text {
+						color: rgb(80, 80, 80);
+					}
+
+					.comment-time {
+						color: #bbb;
+						font-size: 12px;
+						font-weight: bold;
+						position: absolute;
+						right: 8px;
+						top: 10px;
+					}
+				}
+
+				.photobooth-comment-composer {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					margin: 0;
+					background: rgba(255,255,255,0.9);
+					border-top: 1px solid rgba(255,255,255,0);
+					-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 -1px 0 rgba(0,0,0,0.05), 0 -2px 0 rgba(0,0,0,0.02), 0 -3px 0 rgba(0,0,0,0.02);
+					box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 -1px 0 rgba(0,0,0,0.05), 0 -2px 0 rgba(0,0,0,0.02), 0 -3px 0 rgba(0,0,0,0.02);
+					color: #999;
+					width: 252px;
+					padding: 10px 11px 10px 50px;
+
+					textarea {
+						padding: 7px 7px 6px;
+						height: 30px;
+						width: 250px; 
+						margin-left: 1px;
+						resize: none;
+						overflow: hidden;
+						padding-bottom: 6px;
+						padding-left: 7px;
+						-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05), 0 1px 0 rgba(255,255,255,0.8);
+						color: #999;
+						border: 1px solid #ccc;
+						-webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						-ms-box-sizing: border-box;
+						box-sizing: border-box;
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						-khtml-border-radius: 3px;
+						border-radius: 3px;
+						-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+						-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+						-ms-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+						-o-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+						box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+
+						&:focus {
+							border-color: #a4baca;
+							background: #f5f7f9;
+							outline: none;
+							color: rgb(20,20,20);
+						}
+					}
+				} // Closes .photobooth-comment-composer
+			} // Closes .photobooth-conversation-container
+		} // Closes .photobooth-social-container	
+	} // Closes .photobooth-photo-page
+} // Closes fancybox wrapper
+
+
+} // Closes page wrapper
+
+
