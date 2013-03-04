@@ -21,6 +21,10 @@
 
     <!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+		<!-- Favicon -->
+		<link rel="icon" 
+      type="image/png" 
+      href="/favicon.ico">
 	</head>
 	<body id="photofeed">
 		<div class="page">
