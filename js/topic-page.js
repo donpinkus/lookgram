@@ -15,7 +15,7 @@ $(document).ready(function(){
 	var $container = $('.main');
 	$container.imagesLoaded( function(){
 	  $container.masonry({
-	    itemSelector : '.vote-photo-element',
+	    itemSelector : '.masonry-container-hack',
 	    columnWidth : 238
 	  });
 	});

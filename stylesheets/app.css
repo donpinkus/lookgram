@@ -1578,7 +1578,7 @@ html {
 }
 /* line 10, ../sass/_photo-feed.scss */
 #photofeed .main .photo-column {
-  display: inline-block;
+  display: block;
   float: left;
   width: 200px;
   margin: 20px 3px;

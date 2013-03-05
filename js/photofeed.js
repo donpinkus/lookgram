@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var $container = $('.main');
 	$container.imagesLoaded( function(){
 	  $container.masonry({
-	    itemSelector : '.photo-column',
+	    itemSelector : '.masonry-container-hack',
 	    columnWidth : 238
 	  });
 	});

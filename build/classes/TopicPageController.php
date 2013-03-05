@@ -35,7 +35,9 @@ class TopicPageController extends Photofeed {
 		// Prints photos of topic. 
 		foreach ($photo_ids as $photo_id) {
 			$photo_row = Photo::get_photo_by_id($photo_id);
-			$this->print_column_photo($photo_row);
+			echo '<div class="masonry-container-hack">';
+				$this->print_column_photo($photo_row);
+			echo '</div>';
 		}
 	}
 

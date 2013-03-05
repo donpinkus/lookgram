@@ -159,7 +159,9 @@ class Photofeed {
 		$topics = $this->get_topic_columns();
 		foreach ($topics as $topic) {
 			$photo_ids = $this->get_photo_ids_for_topic($topic);
-			$this->print_column($topic);
+			echo '<div class="masonry-container-hack">';
+				$this->print_column($topic);
+			echo '</div>';
 		}
 	}
 }
