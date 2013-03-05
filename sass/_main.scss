@@ -15,9 +15,8 @@ html {
 
 @font-face {
 	font-family: 'entypo';
-	font-style: normal;
-	font-weight: 400;
-	src: url('/css/fonts/entypo.eot?') format('eot'), url('/css/fonts/entypo.woff') format('woff'), url('/css/fonts/entypo.ttf') format('truetype');
+	src: url('/css/fonts/entypo.eot');
+	src: local('Entypo'), url('/css/fonts/entypo.ttf') format("truetype");
 }
 
 @font-face {
