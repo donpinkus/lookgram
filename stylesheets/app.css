@@ -567,8 +567,10 @@ html {
 #lookgram {
   @font-face {
     font-family: 'entypo';
-    src: url("/css/fonts/entypo.eot");
-    src: local("Entypo"), url("/css/fonts/entypo.ttf") format("truetype");
+    src: url("/entypo.eot");
+    src: url("/entypo.eot?#iefix") format("embedded-opentype"), url("/entypo.woff") format("woff"), url("/entypo.ttf") format("truetype"), url("/entypo.svg#entypo") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
   @font-face {
@@ -595,15 +597,15 @@ html {
   /* Fancyboxes for logging in */
   /* Fancybox for Photo upload */
 }
-/* line 37, ../sass/_main.scss */
+/* line 42, ../sass/_main.scss */
 #lookgram h1 {
   font-size: 25px;
 }
-/* line 41, ../sass/_main.scss */
+/* line 46, ../sass/_main.scss */
 #lookgram a {
   text-decoration: none;
 }
-/* line 57, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 #lookgram .top-nav {
   position: fixed;
   width: 100%;
@@ -618,24 +620,24 @@ html {
   -moz-box-shadow: rgba(111, 151, 182, 0.5) 0 1px 0 inset, rgba(111, 151, 182, 0.2) 0 -1px 0 inset, rgba(0, 0, 0, 0.2) 0px 1px 1px;
   box-shadow: rgba(111, 151, 182, 0.5) 0 1px 0 inset, rgba(111, 151, 182, 0.2) 0 -1px 0 inset, rgba(0, 0, 0, 0.2) 0px 1px 1px;
 }
-/* line 71, ../sass/_main.scss */
+/* line 76, ../sass/_main.scss */
 #lookgram .top-nav .wrapper {
   width: 960px;
   margin: 0 auto;
   position: relative;
 }
-/* line 76, ../sass/_main.scss */
+/* line 81, ../sass/_main.scss */
 #lookgram .top-nav .wrapper h1 {
   display: inline-block;
   padding-top: 5px;
 }
-/* line 80, ../sass/_main.scss */
+/* line 85, ../sass/_main.scss */
 #lookgram .top-nav .wrapper h1 a {
   text-decoration: none;
   text-shadow: 1px 1px 1px #323232;
   color: #f3f3f3;
 }
-/* line 98, ../sass/_main.scss */
+/* line 103, ../sass/_main.scss */
 #lookgram .page > header .blue-button {
   display: inline-block;
   padding: 5px 0px 6px 0px;
@@ -651,7 +653,7 @@ html {
   box-shadow: rgba(0, 0, 0, 0.09804) 0px 1px 1px 0px, rgba(255, 255, 255, 0.04706) 1px 0px 0px 0px inset, rgba(255, 255, 255, 0.04706) -1px 0px 0px 0px inset, rgba(0, 0, 0, 0.07843) 0px 1px 0px 0px inset;
   cursor: pointer;
 }
-/* line 117, ../sass/_main.scss */
+/* line 122, ../sass/_main.scss */
 #lookgram .page > header .home-button {
   position: absolute;
   left: 0px;
@@ -668,55 +670,55 @@ html {
   color: #e9e9e9;
   font-size: 45;
 }
-/* line 133, ../sass/_main.scss */
+/* line 138, ../sass/_main.scss */
 #lookgram .page > header .home-button.selected {
   background-color: rgba(6, 54, 95, 0.35);
 }
-/* line 138, ../sass/_main.scss */
+/* line 143, ../sass/_main.scss */
 #lookgram .page > header .home-button:hover {
   background-color: rgba(6, 54, 95, 0.35);
 }
-/* line 143, ../sass/_main.scss */
+/* line 148, ../sass/_main.scss */
 #lookgram .page > header .account-state {
   position: absolute;
   top: 0px;
   right: 0px;
   font-weight: bold;
 }
-/* line 149, ../sass/_main.scss */
+/* line 154, ../sass/_main.scss */
 #lookgram .page > header .account-state a, #lookgram .page > header .account-state a:hover, #lookgram .page > header .account-state a:active {
   color: #e9e9e9;
 }
-/* line 153, ../sass/_main.scss */
+/* line 158, ../sass/_main.scss */
 #lookgram .page > header .account-state p, #lookgram .page > header .account-state .action {
   float: right;
   display: inline;
 }
-/* line 157, ../sass/_main.scss */
+/* line 162, ../sass/_main.scss */
 #lookgram .page > header .account-state p {
   padding: 8px 0 0 15px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 161, ../sass/_main.scss */
+/* line 166, ../sass/_main.scss */
 #lookgram .page > header .account-state ul {
   margin: 0;
   padding: 0;
 }
-/* line 165, ../sass/_main.scss */
+/* line 170, ../sass/_main.scss */
 #lookgram .page > header .account-state > ul {
   border-right: 1px solid #5786aa;
   border-right-color: rgba(255, 255, 255, 0.1);
   border-left: 1px solid #06365f;
   border-left-color: rgba(0, 0, 0, 0.1);
 }
-/* line 170, ../sass/_main.scss */
+/* line 175, ../sass/_main.scss */
 #lookgram .page > header .account-state > ul > li {
   position: relative;
   float: left;
   display: inline;
   margin: 0;
 }
-/* line 175, ../sass/_main.scss */
+/* line 180, ../sass/_main.scss */
 #lookgram .page > header .account-state > ul > li > a {
   position: relative;
   display: block;
@@ -732,13 +734,13 @@ html {
   text-shadow: 0 1px 0 rgba(3, 27, 47, 0.5);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/* line 190, ../sass/_main.scss */
+/* line 195, ../sass/_main.scss */
 #lookgram .page > header .account-state > ul > li > a:hover {
   background: url(../../images/alpha/fff_10.png);
   background: rgba(255, 255, 255, 0.1);
   border-right-color: rgba(0, 0, 0, 0.15);
 }
-/* line 195, ../sass/_main.scss */
+/* line 200, ../sass/_main.scss */
 #lookgram .page > header .account-state > ul > li > a i {
   display: block;
   float: left;
@@ -746,11 +748,11 @@ html {
   width: 28px;
   margin: -7px 6px 0 -4px;
 }
-/* line 206, ../sass/_main.scss */
+/* line 211, ../sass/_main.scss */
 #lookgram .page > header .account-state .link-signin i {
   background: url(../images/glyph-assets.png) no-repeat 2px 3px;
 }
-/* line 211, ../sass/_main.scss */
+/* line 216, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown {
   right: 1px;
   top: 38px;
@@ -768,11 +770,11 @@ html {
   z-index: 100;
   text-align: left;
 }
-/* line 228, ../sass/_main.scss */
+/* line 233, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown.hidden {
   visibility: hidden;
 }
-/* line 232, ../sass/_main.scss */
+/* line 237, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown ul {
   min-width: 130px;
   background: #eeeeee url(../images/white-gradient-300px.png) repeat-x 0 0;
@@ -788,7 +790,7 @@ html {
   padding: 1px 3px;
   list-style: none;
 }
-/* line 248, ../sass/_main.scss */
+/* line 253, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown ul li {
   white-space: nowrap;
   padding: 5px 0 0;
@@ -800,7 +802,7 @@ html {
   -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
-/* line 259, ../sass/_main.scss */
+/* line 264, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown ul li:first-child {
   border-top: none;
   -webkit-box-shadow: none;
@@ -809,11 +811,11 @@ html {
   -o-box-shadow: none;
   box-shadow: none;
 }
-/* line 268, ../sass/_main.scss */
+/* line 273, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown ul li:hover {
   background: rgba(244, 244, 244, 0.6);
 }
-/* line 274, ../sass/_main.scss */
+/* line 279, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown a {
   color: #666;
   display: block;
@@ -825,35 +827,35 @@ html {
   -khtml-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 285, ../sass/_main.scss */
+/* line 290, ../sass/_main.scss */
 #lookgram .page > header .account-state .dropdown a:hover {
   color: #666;
 }
-/* line 292, ../sass/_main.scss */
+/* line 297, ../sass/_main.scss */
 #lookgram .page > header .account-state .add-prompt {
   font-family: entypo;
   font-size: 40px;
   line-height: 15px;
   padding-right: 8px;
 }
-/* line 301, ../sass/_main.scss */
+/* line 306, ../sass/_main.scss */
 #lookgram .page .main {
   padding-top: 40px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 310, ../sass/_main.scss */
+/* line 315, ../sass/_main.scss */
 #lookgram .fancybox-skin {
   background-color: transparent;
 }
-/* line 313, ../sass/_main.scss */
+/* line 318, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox {
   margin: 0px;
   padding: 0px;
   width: 430px;
 }
-/* line 318, ../sass/_main.scss */
+/* line 323, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginHeader {
   background: #FFFFFF;
   height: 46px;
@@ -862,13 +864,13 @@ html {
   padding-top: 20px;
   padding-left: 30px;
 }
-/* line 326, ../sass/_main.scss */
+/* line 331, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginHeader h1 {
   font-weight: bold;
   color: #33383D;
   font-size: 24px;
 }
-/* line 333, ../sass/_main.scss */
+/* line 338, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginForm {
   background: #F7F7F7;
   border-top: 1px solid #eeeeee;
@@ -877,7 +879,7 @@ html {
   width: 370px;
   padding: 30px;
 }
-/* line 341, ../sass/_main.scss */
+/* line 346, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input {
   width: 368px;
   height: 50px;
@@ -888,21 +890,21 @@ html {
   background: #EAEAEA;
   color: #9A9DA1;
 }
-/* line 351, ../sass/_main.scss */
+/* line 356, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input:focus {
   background: white;
   color: #5a5a5a;
   outline: none;
 }
-/* line 357, ../sass/_main.scss */
+/* line 362, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input:hover {
   border-color: #a0a0a0;
 }
-/* line 361, ../sass/_main.scss */
+/* line 366, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input.filledOut {
   color: #5a5a5a;
 }
-/* line 367, ../sass/_main.scss */
+/* line 372, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginSubmit {
   width: 370;
   height: 57px;
@@ -911,7 +913,7 @@ html {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 375, ../sass/_main.scss */
+/* line 380, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginSubmit button {
   background-color: #4090BA;
   border-radius: 4px;
@@ -927,17 +929,17 @@ html {
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 390, ../sass/_main.scss */
+/* line 395, ../sass/_main.scss */
 #lookgram .fancybox-skin .loginFancybox .loginSubmit button:hover {
   background-color: #3A82A8;
 }
-/* line 399, ../sass/_main.scss */
+/* line 404, ../sass/_main.scss */
 #lookgram .upload-photo-page {
   width: 613px;
   margin: 0px;
   padding: 0px;
 }
-/* line 404, ../sass/_main.scss */
+/* line 409, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-header {
   background-image: -webkit-linear-gradient(top, #fffcfc, #f0eded);
   height: 46px;
@@ -951,24 +953,24 @@ html {
   text-shadow: white 0px 1px 0px;
   border-bottom: 1px solid #cccaca;
 }
-/* line 418, ../sass/_main.scss */
+/* line 423, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content {
   background: #fcf9f9;
 }
-/* line 421, ../sass/_main.scss */
+/* line 426, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-button-container {
   height: 40px;
   border-bottom: 1px solid gainsboro;
   padding: 30px 30px 20px 30px;
 }
-/* line 427, ../sass/_main.scss */
+/* line 432, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container {
   position: relative;
   min-height: 183px;
   padding: 30px 30px 20px 30px;
   overflow: hidden;
 }
-/* line 433, ../sass/_main.scss */
+/* line 438, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .image-preview {
   float: left;
   clear: none;
@@ -982,7 +984,7 @@ html {
   -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
   -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
-/* line 446, ../sass/_main.scss */
+/* line 451, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .image-preview img {
   max-width: 170px;
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
@@ -990,13 +992,13 @@ html {
   -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
   border-radius: 3px;
 }
-/* line 455, ../sass/_main.scss */
+/* line 460, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column {
   float: left;
   clear: none;
   width: 375px;
 }
-/* line 461, ../sass/_main.scss */
+/* line 466, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-description textarea {
   width: 350px;
   height: 60px;
@@ -1009,23 +1011,23 @@ html {
   color: #c5bcbc;
   line-height: 23px;
 }
-/* line 473, ../sass/_main.scss */
+/* line 478, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-description textarea:focus {
   border-color: #a4baca;
   background: #f5f7f9;
   outline: none;
   color: #141414;
 }
-/* line 482, ../sass/_main.scss */
+/* line 487, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger {
   display: block;
   margin-top: 20px;
 }
-/* line 486, ../sass/_main.scss */
+/* line 491, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger input {
   width: 100px;
 }
-/* line 490, ../sass/_main.scss */
+/* line 495, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger .add-tag {
   border-radius: 3px;
   border: 1px solid #d1cdcd;
@@ -1035,37 +1037,37 @@ html {
   color: #d1cdcd;
   -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.8), inset 0 1px rgba(255, 255, 255, 0.35);
 }
-/* line 501, ../sass/_main.scss */
+/* line 506, ../sass/_main.scss */
 #lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-post {
   margin-top: 20px;
   font-size: 16px;
   font-weight: bold;
   padding: 10 15;
 }
-/* line 512, ../sass/_main.scss */
+/* line 517, ../sass/_main.scss */
 #lookgram .footer {
   width: 960px;
   padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 518, ../sass/_main.scss */
+/* line 523, ../sass/_main.scss */
 #lookgram .footer li {
   float: left;
   margin-right: 20px;
 }
-/* line 522, ../sass/_main.scss */
+/* line 527, ../sass/_main.scss */
 #lookgram .footer li a {
   color: #3f729b;
   font-size: 13px;
   font-weight: bold;
   text-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
 }
-/* line 528, ../sass/_main.scss */
+/* line 533, ../sass/_main.scss */
 #lookgram .footer li a:hover {
   text-decoration: underline;
 }
-/* line 534, ../sass/_main.scss */
+/* line 539, ../sass/_main.scss */
 #lookgram .footer span {
   float: right;
   font-size: 13px;
