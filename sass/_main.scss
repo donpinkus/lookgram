@@ -7,19 +7,13 @@ Description: Main stylesheet for Lookgr.am.
 
 // Temp ID wrapper to override base foundation styles
 
-html {
-	background: #edeeef;
-}
-
-#lookgram{
-
 @font-face {
   font-family: 'entypo';
-  src: url('/entypo.eot');
-  src: url('/entypo.eot?#iefix') format('embedded-opentype'),
-       url('/entypo.woff') format('woff'),
-       url('/entypo.ttf') format('truetype'),
-       url('/entypo.svg#entypo') format('svg');
+  src: url('/css/fonts/entypo.eot');
+  src: url('/css/fonts/entypo.eot?#iefix') format('embedded-opentype'),
+       url('/css/fonts/entypo.woff') format('woff'),
+       url('/css/fonts/entypo.ttf') format('truetype'),
+       url('/css/fonts/entypo.svg#entypo') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,6 +24,12 @@ html {
 	font-weight: 400;
 	src: url('/css/fonts/entypo-social.woff') format('woff');
 }	
+
+html {
+	background: #edeeef;
+}
+
+#lookgram{
 
 margin: 0;
 font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
