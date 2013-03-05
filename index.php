@@ -24,7 +24,7 @@
 		<!-- Favicon -->
 		<link rel="icon" 
       type="image/png" 
-      href="/favicon.ico">
+      href="/shirt1.ico">
 	</head>
 	<body id="photofeed">
 		<?php require_once("build/includes/analyticstracking.php"); ?>
