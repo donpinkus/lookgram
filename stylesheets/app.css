@@ -569,7 +569,7 @@ html {
     font-family: 'entypo';
     font-style: normal;
     font-weight: 400;
-    src: url("entypo.eot?") format("eot"), url("entypo.woff") format("woff"), url("entypo.ttf") format("truetype");
+    src: url("/css/fonts/entypo.eot?") format("eot"), url("/css/fonts/entypo.woff") format("woff"), url("/css/fonts/entypo.ttf") format("truetype");
 }
 
   @font-face {
