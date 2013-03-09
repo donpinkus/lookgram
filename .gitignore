@@ -1,3 +1,4 @@
-build/includes/initialize.php
-build/includes/config.php
+/build/includes/initialize.php
+/build/includes/config.php
 .sass-cache
+/photos/

@@ -44,8 +44,13 @@ class Tag {
 							(tag_id, photo_id, article)
 							VALUES ({$this->tag_id}, {$this->photo_id}, '{$this->article}')
 						";
+		} 
+		// Write the tags.
+		if (isset($sql)) {
+			$do_it_bitch = mysql_query($sql);
+		} else {
+			echo "No tags submitted. Nothing written.";
 		}
-		$do_it_bitch = mysql_query($sql);
 	}
 }
 

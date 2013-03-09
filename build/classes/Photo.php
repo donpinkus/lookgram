@@ -133,10 +133,26 @@ class Photo {
 				$firephp->log($_FILES);
 				$firephp->log($_FILES["images"]["tmp_name"][$key]);
 				$firephp->log("/photos/" . $_SESSION['user_id'] . "/" . $max_photo_id . $extension);
-				// TODO: this uses the full path which is strange. Why does it need the full path? 
-				move_uploaded_file($_FILES["images"]["tmp_name"][$key], "/Users/donald/Projects/lookgr.am/photos/" . $_SESSION['user_id'] . "/" . $max_photo_id . $extension);
+				
+				$save_path = SITE_ROOT . "/photos/" . $_SESSION['user_id'] . "/" . $max_photo_id . $extension;
+				move_uploaded_file($_FILES["images"]["tmp_name"][$key], $save_path);
 			}
 		}
+
+
+		// Create thumbnail.
+		// 1. Initialize / load the image
+		$resizeObj = new Resize($save_path);
+
+		// 2. Resize image (options: exact, portrait, landscape, auto, crop)
+		// TODO: Do I always use auto?? or Portrait?
+		$resizeObj->resizeImage(200, null, 'landscape');
+
+		// 3. Save image
+		// TODO: this will save to thumbnails folder
+		$thumbnail_save_path = $save_path = SITE_ROOT . "/photos-thumbnails/" . $_SESSION['user_id'] . "/" . $max_photo_id . $extension;
+		$resizeObj->saveImage($thumbnail_save_path, 100);
+
 
 		// Write tag data.
 		// Takes JSON.stringify() strips the slashes and parses.
@@ -212,7 +228,7 @@ class Photo {
 				<div class="photo">
 					<a href="photobooth.php?photo_id=' . $photo['photo_id'] . '" class="fancybox.ajax fancybox" rel="profile-gallery">
 						<div class="imgContainer">
-							<img class="imgImg" src="../../photos/' . Photo::get_photo_path($photo['photo_id']) . '" />
+							<img class="imgImg" src="../../photos-thumbnails/' . Photo::get_photo_path($photo['photo_id']) . '" />
 						</div>
 					</a>
 				</div>';

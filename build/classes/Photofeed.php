@@ -110,7 +110,7 @@ class Photofeed {
 		echo '<div class="vote-photo-element" data-photo-id="' . $photo->photo_id . '">
 						<a href="photobooth.php?photo_id=' . $photo_row['photo_id'] . '" class="fancybox.ajax fancybox" rel="feed-gallery">
 							<div class="image-container">
-								<img src="photos/' . Photo::get_photo_path($photo_row['photo_id']) . '" />
+								<img src="/photos-thumbnails/' . Photo::get_photo_path($photo_row['photo_id']) . '" />
 							</div>
 						</a>
 						<div class="image-rater">

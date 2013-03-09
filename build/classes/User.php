@@ -57,6 +57,7 @@ class User {
     $user_info = self::find_user_info($user_handle);
     $user_id = $user_info['user_id'];
     mkdir("../../photos/" . $user_id, 0777);
+    mkdir("../../photos-thumbnails/" . $user_id, 0777);
   }
 
 
