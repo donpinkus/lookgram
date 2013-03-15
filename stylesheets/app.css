@@ -575,7 +575,7 @@ Description: Main stylesheet for Lookgr.am.
 
 /* line 28, ../sass/_main.scss */
 html {
-  background: #edeeef;
+  background: #EDECEE;
 }
 
 /* line 32, ../sass/_main.scss */
@@ -1575,35 +1575,35 @@ html {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
-/* line 10, ../sass/_photo-feed.scss */
+/* line 11, ../sass/_photo-feed.scss */
 #photofeed .main .photo-column {
   display: block;
   float: left;
-  width: 200px;
-  margin: 20px 3px;
-  padding: 18px 15px;
-  background: #e0e1e2 url(../images/noise-2.png) repeat-x 50% 50%;
-  -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.05), inset -1px 0 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.05), inset -1px 0 0 rgba(0, 0, 0, 0.05);
-  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.05), inset -1px 0 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+  width: 224px;
+  padding: 14px 7px 39px 7px;
+}
+/* line 17, ../sass/_photo-feed.scss */
+#photofeed .main .photo-column h2 {
+  width: 210px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 /* line 23, ../sass/_photo-feed.scss */
-#photofeed .main .photo-column h2 {
-  margin-bottom: 15px;
-}
-/* line 25, ../sass/_photo-feed.scss */
 #photofeed .main .photo-column h2 a {
-  font-size: 15px;
-  font-weight: bold;
-  color: #3f729b;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  margin-top: 14px;
+  margin-bottom: 21px;
+  font-size: 21px;
+  color: #B5B8BA;
 }
-/* line 31, ../sass/_photo-feed.scss */
+/* line 30, ../sass/_photo-feed.scss */
 #photofeed .main .photo-column h2 a:hover {
   text-decoration: underline;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* line 4, ../sass/_topic-page.scss */
@@ -1718,27 +1718,25 @@ html {
 
 /* line 4, ../sass/_vote-photo-element.scss */
 .vote-photo-element {
-  width: 200px;
+  width: 216px;
   display: inline-block;
   vertical-align: text-top;
   margin-bottom: 20px;
-  background: #fafafa;
-  border: 1px solid silver;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.1);
+  background: white;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.06);
 }
-/* line 17, ../sass/_vote-photo-element.scss */
+/* line 12, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-container {
   text-align: center;
   line-height: 184px;
+  background: white;
+  padding: 8px;
+  border: 1px solid #e0e0df;
 }
-/* line 21, ../sass/_vote-photo-element.scss */
+/* line 19, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-container img {
   display: block;
-  width: 100%;
+  width: 200px;
   min-height: 75px;
   margin-left: auto;
   margin-right: auto;
@@ -1748,31 +1746,33 @@ html {
   cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
-/* line 35, ../sass/_vote-photo-element.scss */
+/* line 33, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-rater {
-  width: 200px;
+  z-index: 2;
+  width: 214px;
   height: 35px;
+  border-left: 1px solid #e0e0df;
+  border-right: 1px solid #e0e0df;
+  border-bottom: 1px solid #e0e0df;
+  background: white;
+  color: #8B8E91;
   line-height: 26px;
   font-family: "entypo";
-  font-size: 32px;
+  font-size: 27px;
   cursor: default;
-  color: #505050;
-  background: #e6e6e6 url(../images/white-gradient-100px.png) repeat-x 50% 50%;
-  border-bottom: 1px solid #dddddd;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 3px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 3px rgba(0, 0, 0, 0.1);
-  z-index: 2;
   text-align: center;
 }
-/* line 51, ../sass/_vote-photo-element.scss */
+/* line 48, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-rater .vote {
-  position: relative;
   float: left;
-  width: 40px;
+  width: 35px;
   height: 31px;
   padding-top: 4px;
   cursor: pointer;
+}
+/* line 55, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-rater .vote.downvote {
+  float: right;
 }
 /* line 59, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-rater .vote:hover {
@@ -1796,10 +1796,49 @@ html {
 }
 /* line 80, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-rater .rating-number {
-  position: relative;
   float: left;
-  width: 118px;
+  width: 140;
   height: 25px;
   padding-top: 8px;
-  font-size: 23px;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 90, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info {
+  position: relative;
+  height: 51px;
+  border-left: 1px solid #e0e0df;
+  border-right: 1px solid #e0e0df;
+  border-bottom: 1px solid #e0e0df;
+  font-size: 12px;
+}
+/* line 98, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info .actor-photo {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 36px;
+  width: 36px;
+  opacity: 0.4;
+}
+/* line 111, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info .name {
+  position: absolute;
+  top: 7px;
+  left: 51px;
+}
+/* line 115, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info .name a {
+  color: #8B8E91;
+  font-weight: bold;
+}
+/* line 121, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info .date {
+  position: absolute;
+  top: 28px;
+  left: 51px;
+}
+/* line 125, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info .date span {
+  color: rgba(0, 0, 0, 0.4);
 }

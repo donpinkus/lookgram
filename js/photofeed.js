@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$container.imagesLoaded( function(){
 	  $container.masonry({
 	    itemSelector : '.masonry-container-hack',
-	    columnWidth : 238
+	    columnWidth : 240
 	  });
 	});
 

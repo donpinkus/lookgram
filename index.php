@@ -28,6 +28,8 @@
 	</head>
 	<body id="photofeed">
 		<?php require_once("build/includes/analyticstracking.php"); ?>
+		<div id="fb-root"></div>
+		<script src="js/helpers/facebook-sdk/fb-js-sdk.js"></script>
 		<div class="page">
 			<header class="top-nav">
 				<div class="wrapper">

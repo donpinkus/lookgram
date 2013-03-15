@@ -124,6 +124,17 @@ class Photofeed {
 								<span>&#128078;</span>
 							</div>
 						</div>
+						<div class="image-actor-info">
+							<div class="actor-photo">
+								<img src="/images/profile-pic.jpeg" />
+							</div>
+							<div class="name">
+								<a href="/profile.php?user_id=' . $photo->user_id . '">' . $photo->user_handle . '</a>
+							</div>
+							<div class="date">
+								<span>' . Comment::format_datestamp($photo->photo_date) . '</span>
+							</div>
+						</div>
 					</div>';
 	}
 
@@ -142,7 +153,7 @@ class Photofeed {
 
 		echo "
 			<div class=\"photo-column\">
-				<h2><a href=\"{$column_link}\">" . $column_title . "</a></h2>
+				<h2><a href=\"{$column_link}\">" . ucwords($column_title) . "</a></h2>
 		";
 		$photo_ids = $this->get_photo_ids_for_topic($topic);
 		foreach ($photo_ids as $photo_id) {

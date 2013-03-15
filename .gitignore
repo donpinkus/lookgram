@@ -2,3 +2,5 @@
 /build/includes/config.php
 .sass-cache
 /photos/
+*.sublime-project
+*.sublime-workspace

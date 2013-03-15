@@ -1,0 +1,313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"dim_adm",
+				"dim_admarket_target_spec_target"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/donald/Projects/lookgram/build/classes/Photo.php",
+		"/Users/donald/Projects/lookgram/build/classes/User.php",
+		"/Users/donald/Projects/lookgram/build/classes/Resize.php",
+		"/Users/donald/Projects/lookgram/build/classes/Photofeed.php",
+		"/Users/donald/Desktop/Amazon-AWS/Using an instance.txt",
+		"/Users/donald/Projects/lookgram/build/includes/config.php",
+		"/Users/donald/Projects/lookgram/build/ajaxes/resize-image.php",
+		"/Users/donald/Projects/lookgram/build/includes/initialize.php",
+		"/Users/donald/Projects/lookgram/build/classes/Tag.php",
+		"/Users/donald/Projects/lookgram/build/includes/head-js-libs.php",
+		"/Users/donald/Projects/lookgram/build/classes/TopicPageController.php",
+		"/Users/donald/Projects/lookgram/js/topic-page.js",
+		"/Users/donald/Projects/lookgram/js/photofeed.js",
+		"/Users/donald/Projects/lookgram/js/main.js",
+		"/Users/donald/Projects/lookgram/topic.php",
+		"/Users/donald/Projects/lookgram/sass/_main.scss",
+		"/Users/donald/Projects/lookgram/index.php",
+		"/Users/donald/Projects/lookgram/sass/_photo-feed.scss",
+		"/Users/donald/Desktop/FB Work/Ad Monitor/Marketplace Management/Query v1.sql",
+		"/Users/donald/Projects/lookgram/photobooth.php",
+		"/Users/donald/Projects/lookgram/profile.php",
+		"/Users/donald/Projects/lookgram/build/includes/analyticstracking.php",
+		"/Users/donald/Projects/lookgr.am/index.php",
+		"/Users/donald/Projects/lookgr.am/js/main.js",
+		"/Users/donald/Desktop/awesome.html",
+		"/Users/donald/Projects/lookgr.am/build/ajaxes/check-logged-in.php",
+		"/Volumes/bitnami@ec2-54-242-174-150.compute-1.amazonaws.com/stack/apache2/htdocs/test.php",
+		"/Volumes/bitnami@ec2-54-242-174-150.compute-1.amazonaws.com/stack/apache2/htdocs/index.html",
+		"/Users/donald/Desktop/FB Work/FB Pixel/Dashboard/FB Pixel Dashboard v9.sql",
+		"/Users/donald/Projects/lookgr.am/sass/_main.scss",
+		"/Users/donald/Projects/lookgr.am/profile.php",
+		"/Users/donald/Projects/lookgr.am/topic.php",
+		"/Users/donald/Projects/lookgr.am/sass/app.scss",
+		"/Users/donald/Projects/lookgr.am/sass/_reset.scss",
+		"/Users/donald/Projects/lookgr.am/build/classes/Photofeed.php",
+		"/Users/donald/Projects/lookgr.am/build/includes/header-account-info.php",
+		"/Users/donald/Projects/lookgr.am/aris-test.php",
+		"/Users/donald/Projects/lookgr.am/sass/_vote-photo-element.scss",
+		"/Users/donald/Projects/lookgr.am/js/topic-page.js",
+		"/Users/donald/Projects/lookgr.am/js/photofeed.js",
+		"/Users/donald/Projects/lookgr.am/build/includes/head-js-libs.php",
+		"/Users/donald/Projects/lookgr.am/js/helpers.js",
+		"/Users/donald/Projects/lookgr.am/sass/_topic-page.scss",
+		"/Users/donald/Projects/lookgr.am/sass/_photobooth.scss",
+		"/Users/donald/Projects/lookgr.am/sass/_photo-feed.scss",
+		"/Users/donald/Projects/lookgr.am/sass/_profile.scss",
+		"/Users/donald/Projects/lookgr.am/build/classes/TopicPageController.php",
+		"/Users/donald/Projects/lookgr.am/build/classes/Photo.php",
+		"/Users/donald/Projects/lookgr.am/build/includes/initialize.php",
+		"/Users/donald/Projects/lookgr.am/js/profile.js",
+		"/Users/donald/Projects/lookgr.am/js/photo-uploader.js",
+		"/Users/donald/Projects/lookgr.am/build/classes/Topic_page_controller.php",
+		"/Users/donald/Projects/lookgr.am/js/photobooth.js",
+		"/Users/donald/Projects/lookgr.am/photobooth.php",
+		"/Users/donald/Desktop/FB Work/FB Pixel/Dashboard/Safeguard v1.sql",
+		"/Users/donald/Desktop/FB Work/FB Pixel/Dashboard/Main dashboard queries",
+		"/Users/donald/Desktop/FB Work/FB Pixel/Dashboard/FB Pixel Dashboard v9 - Data Quality checks.sql",
+		"/Users/donald/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/donald/Library/Caches/TemporaryItems/Outlook Temp/FB Pixel Main Dashboard v3.twb",
+		"/Users/donald/Desktop/FB Work/Opportunities/Newsfeed pricing/ami's query v1.sql",
+		"/Users/donald/Desktop/FB Work/ad hoc/CPA changes over christmas.sql",
+		"/Users/donald/Desktop/FB Work/Opportunities/analyses/Demand vs bugs in STR.sql",
+		"/Users/donald/Desktop/FB Work/auction/Invalidations by position scratch paper.sql",
+		"/Users/donald/Desktop/hipal sql.sql",
+		"/Users/donald/Desktop/FB Work/Opportunities/Data Weirdness/quality checks v1.sql",
+		"/Users/donald/Desktop/FB Work/Opportunities/analyses/demographics v1.sql",
+		"/Users/donald/Desktop/FB Work/Opportunities/pipelines/H2O donald.opps_by_country_page.sql",
+		"/Users/donald/Desktop/FB Work/Opportunities/pipelines/opportunities_aggregated_by_userid_and_pagetype v1.sql",
+		"/Users/donald/Desktop/FB Work/Opportunities/wiki page.txt",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/pages/profile.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/css/main.css",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/js/photofeed.js",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/css/photo-feed.css",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/classes/Photo.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/pages/index.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/classes/Photofeed.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/js/profile.js",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/css/profile.css",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/css/instagram photo styles.css",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/classes/Profile.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/css/photobooth.css",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/pages/photobooth.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/js/photo-uploader.js",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/classes/Tag.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/includes/initialize.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/pages/photo-upload.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/ajaxes/upload-photo.php",
+		"/Users/donald/scripts/fb_sync",
+		"/Users/donald/Desktop/FB Work/Custom Audiences/hipal2_1160390.csv",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/classes/User.php",
+		"/Users/donald/Desktop/FB Work/Credits/App Installs/app defect rates.csv",
+		"/Users/donald/Desktop/FB Work/Credits/App Installs/joining for app ids.sql",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/includes/header-account-info.php",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/public/js/main.js",
+		"/Users/donald/Desktop/FB Work/Ad Monitor/Admarket 3 time series.sql",
+		"/Users/donald/Desktop/FB Work/Credits/App Installs/credits v2.sql",
+		"/Users/donald/Desktop/FB Work/Frequency Cap/Monitoring v2.sql",
+		"/Users/donald/Desktop/FB Work/Frequency Cap/Monitoring v1.sql",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/classes/Database.php",
+		"/Users/donald/Desktop/FB Work/Ad Monitor/Budget Fulfillment - v1.sql",
+		"/Users/donald/Desktop/FB Work/Ad Monitor/Revenue summary - v1.sql",
+		"/Users/donald/Desktop/FB Work/ad hoc/Revenue from ad_imps_2.sql",
+		"/Users/donald/Desktop/FB Work/Ad Monitor/Demographic Revenue Summary - v1.sql",
+		"/Users/donald/Desktop/FB Work/ad hoc/ad_slates_2 v2.sql",
+		"/Applications/MAMP/htdocs/mirrorme/readme.textile",
+		"/Applications/MAMP/htdocs/mirrorme/trunk/build/classes/Session.php",
+		"/Applications/MAMP/htdocs/mirror.me/public/pages/photo-upload.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/classes/Photo.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/ajaxes/upload-photo.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/classes/Session.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/classes/User.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/classes/Database.php",
+		"/Applications/MAMP/htdocs/mirror.me/public/pages/index.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/ajaxes/register-new-user.php",
+		"/Applications/MAMP/htdocs/mirror.me/public/js/photo-uploader.js",
+		"/Applications/MAMP/htdocs/mirror.me/photos/4.jpeg",
+		"/Applications/MAMP/htdocs/mirror.me/build/includes/config.php",
+		"/Applications/MAMP/htdocs/mirror.me/public/css/main.css",
+		"/Applications/MAMP/htdocs/upload images/upload.js",
+		"/Applications/MAMP/htdocs/upload-images-test/index.php",
+		"/Applications/MAMP/htdocs/upload-images-test/main.js",
+		"/Applications/MAMP/htdocs/upload-images-test/main.css",
+		"/Applications/MAMP/htdocs/upload-images-test/upload.php",
+		"/Applications/MAMP/htdocs/mirror.me/public/js/main.js",
+		"/Applications/MAMP/htdocs/mirror.me/build/includes/header-account-info.php",
+		"/Applications/MAMP/htdocs/mirror.me/public/pages/sign-up.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/ajaxes/login-user.php",
+		"/Applications/MAMP/htdocs/mirror.me/build/includes/header-logged-out-buttons.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"upload",
+			"entypo",
+			"SELECT distinct ad_id,",
+			"L:  \n		SELECT distinct ad_id,\n		ds\n		FROM ",
+			"optimized_for_conv",
+			"optimized_for",
+			"overflow",
+			".photo",
+			"current_user",
+			"overflow",
+			"2013-01-28",
+			"2013-01-20",
+			"img/",
+			"BIGINT",
+			"recent",
+			"comp",
+			".image-preview",
+			"cursor",
+			"vertical",
+			"lightbox",
+			"lighbtox",
+			"loginFancybox",
+			"15",
+			"fancybox",
+			"photobooth img",
+			"photobooth-img",
+			"bariol",
+			"set_user_data",
+			"/assets/",
+			"total_opportunity_slots",
+			"ads_",
+			"fastdrill",
+			"variable",
+			"menlo",
+			"2012-08-14 % ads.opportunities_v6.opportunities_waterfall_raw_task INFO Running: ",
+			"a."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<DATEID>",
+			"",
+			"img/",
+			"organic_"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}

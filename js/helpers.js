@@ -1,7 +1,7 @@
 // This is used for responsive design on the main div and the header. 
 function get_main_div_width() {
 	var width = $(window).width();
-	var div_width = Math.floor(width / 238) * 238 // Round down. 
+	var div_width = Math.floor(width / 240) * 240 // Round down. 
 	console.log(div_width);
 	return div_width;
 }
