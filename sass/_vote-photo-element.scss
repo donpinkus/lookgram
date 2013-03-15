@@ -113,8 +113,12 @@
 			top: 7px;
 			left: 51px;
 			a {
-				color: #8B8E91;
+				color: #B5B8BA;
 				font-weight: bold;
+				&:hover {
+					text-decoration: underline;
+					color: rgb(160,160,160);
+				}
 			}
 		}
 
@@ -124,6 +128,7 @@
 			left: 51px;
 			span {
 				color: rgba(0,0,0,0.4);
+				cursor: default;
 			}
 		}
 	}

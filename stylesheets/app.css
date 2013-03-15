@@ -579,7 +579,7 @@ html {
 }
 
 /* line 32, ../sass/_main.scss */
-#lookgram {
+body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, "lucida grande", tahoma, verdana, arial, sans-serif;
   /*  -----------------------------------------------------------------------------
@@ -598,15 +598,15 @@ html {
   /* Fancybox for Photo upload */
 }
 /* line 42, ../sass/_main.scss */
-#lookgram h1 {
+body h1 {
   font-size: 25px;
 }
 /* line 46, ../sass/_main.scss */
-#lookgram a {
+body a {
   text-decoration: none;
 }
 /* line 62, ../sass/_main.scss */
-#lookgram .top-nav {
+body .top-nav {
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -621,24 +621,24 @@ html {
   box-shadow: rgba(111, 151, 182, 0.5) 0 1px 0 inset, rgba(111, 151, 182, 0.2) 0 -1px 0 inset, rgba(0, 0, 0, 0.2) 0px 1px 1px;
 }
 /* line 76, ../sass/_main.scss */
-#lookgram .top-nav .wrapper {
+body .top-nav .wrapper {
   width: 960px;
   margin: 0 auto;
   position: relative;
 }
 /* line 81, ../sass/_main.scss */
-#lookgram .top-nav .wrapper h1 {
+body .top-nav .wrapper h1 {
   display: inline-block;
   padding-top: 5px;
 }
 /* line 85, ../sass/_main.scss */
-#lookgram .top-nav .wrapper h1 a {
+body .top-nav .wrapper h1 a {
   text-decoration: none;
   text-shadow: 1px 1px 1px #323232;
   color: #f3f3f3;
 }
 /* line 103, ../sass/_main.scss */
-#lookgram .page > header .blue-button {
+body .page > header .blue-button {
   display: inline-block;
   padding: 5px 0px 6px 0px;
   position: relative;
@@ -654,7 +654,7 @@ html {
   cursor: pointer;
 }
 /* line 122, ../sass/_main.scss */
-#lookgram .page > header .home-button {
+body .page > header .home-button {
   position: absolute;
   left: 0px;
   padding: 0px 11px 13px 12px;
@@ -671,55 +671,55 @@ html {
   font-size: 45;
 }
 /* line 138, ../sass/_main.scss */
-#lookgram .page > header .home-button.selected {
+body .page > header .home-button.selected {
   background-color: rgba(6, 54, 95, 0.35);
 }
 /* line 143, ../sass/_main.scss */
-#lookgram .page > header .home-button:hover {
+body .page > header .home-button:hover {
   background-color: rgba(6, 54, 95, 0.35);
 }
 /* line 148, ../sass/_main.scss */
-#lookgram .page > header .account-state {
+body .page > header .account-state {
   position: absolute;
   top: 0px;
   right: 0px;
   font-weight: bold;
 }
 /* line 154, ../sass/_main.scss */
-#lookgram .page > header .account-state a, #lookgram .page > header .account-state a:hover, #lookgram .page > header .account-state a:active {
+body .page > header .account-state a, body .page > header .account-state a:hover, body .page > header .account-state a:active {
   color: #e9e9e9;
 }
 /* line 158, ../sass/_main.scss */
-#lookgram .page > header .account-state p, #lookgram .page > header .account-state .action {
+body .page > header .account-state p, body .page > header .account-state .action {
   float: right;
   display: inline;
 }
 /* line 162, ../sass/_main.scss */
-#lookgram .page > header .account-state p {
+body .page > header .account-state p {
   padding: 8px 0 0 15px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 /* line 166, ../sass/_main.scss */
-#lookgram .page > header .account-state ul {
+body .page > header .account-state ul {
   margin: 0;
   padding: 0;
 }
 /* line 170, ../sass/_main.scss */
-#lookgram .page > header .account-state > ul {
+body .page > header .account-state > ul {
   border-right: 1px solid #5786aa;
   border-right-color: rgba(255, 255, 255, 0.1);
   border-left: 1px solid #06365f;
   border-left-color: rgba(0, 0, 0, 0.1);
 }
 /* line 175, ../sass/_main.scss */
-#lookgram .page > header .account-state > ul > li {
+body .page > header .account-state > ul > li {
   position: relative;
   float: left;
   display: inline;
   margin: 0;
 }
 /* line 180, ../sass/_main.scss */
-#lookgram .page > header .account-state > ul > li > a {
+body .page > header .account-state > ul > li > a {
   position: relative;
   display: block;
   height: 18px;
@@ -735,13 +735,13 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /* line 195, ../sass/_main.scss */
-#lookgram .page > header .account-state > ul > li > a:hover {
+body .page > header .account-state > ul > li > a:hover {
   background: url(../../images/alpha/fff_10.png);
   background: rgba(255, 255, 255, 0.1);
   border-right-color: rgba(0, 0, 0, 0.15);
 }
 /* line 200, ../sass/_main.scss */
-#lookgram .page > header .account-state > ul > li > a i {
+body .page > header .account-state > ul > li > a i {
   display: block;
   float: left;
   height: 28px;
@@ -749,11 +749,11 @@ html {
   margin: -7px 6px 0 -4px;
 }
 /* line 211, ../sass/_main.scss */
-#lookgram .page > header .account-state .link-signin i {
+body .page > header .account-state .link-signin i {
   background: url(../images/glyph-assets.png) no-repeat 2px 3px;
 }
 /* line 216, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown {
+body .page > header .account-state .dropdown {
   right: 1px;
   top: 38px;
   position: absolute;
@@ -771,11 +771,11 @@ html {
   text-align: left;
 }
 /* line 233, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown.hidden {
+body .page > header .account-state .dropdown.hidden {
   visibility: hidden;
 }
 /* line 237, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown ul {
+body .page > header .account-state .dropdown ul {
   min-width: 130px;
   background: #eeeeee url(../images/white-gradient-300px.png) repeat-x 0 0;
   -webkit-border-radius: 3px;
@@ -791,7 +791,7 @@ html {
   list-style: none;
 }
 /* line 253, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown ul li {
+body .page > header .account-state .dropdown ul li {
   white-space: nowrap;
   padding: 5px 0 0;
   margin: 0 0 5px;
@@ -803,7 +803,7 @@ html {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }
 /* line 264, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown ul li:first-child {
+body .page > header .account-state .dropdown ul li:first-child {
   border-top: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -812,11 +812,11 @@ html {
   box-shadow: none;
 }
 /* line 273, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown ul li:hover {
+body .page > header .account-state .dropdown ul li:hover {
   background: rgba(244, 244, 244, 0.6);
 }
 /* line 279, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown a {
+body .page > header .account-state .dropdown a {
   color: #666;
   display: block;
   padding: 4px 8px 4px 8px;
@@ -828,35 +828,35 @@ html {
   border-radius: 2px;
 }
 /* line 290, ../sass/_main.scss */
-#lookgram .page > header .account-state .dropdown a:hover {
+body .page > header .account-state .dropdown a:hover {
   color: #666;
 }
 /* line 297, ../sass/_main.scss */
-#lookgram .page > header .account-state .add-prompt {
+body .page > header .account-state .add-prompt {
   font-family: entypo;
   font-size: 40px;
   line-height: 15px;
   padding-right: 8px;
 }
 /* line 306, ../sass/_main.scss */
-#lookgram .page .main {
+body .page .main {
   padding-top: 40px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 315, ../sass/_main.scss */
-#lookgram .fancybox-skin {
+body .fancybox-skin {
   background-color: transparent;
 }
 /* line 318, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox {
+body .fancybox-skin .loginFancybox {
   margin: 0px;
   padding: 0px;
   width: 430px;
 }
 /* line 323, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginHeader {
+body .fancybox-skin .loginFancybox .loginHeader {
   background: #FFFFFF;
   height: 46px;
   border-top-left-radius: 4px;
@@ -865,13 +865,13 @@ html {
   padding-left: 30px;
 }
 /* line 331, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginHeader h1 {
+body .fancybox-skin .loginFancybox .loginHeader h1 {
   font-weight: bold;
   color: #33383D;
   font-size: 24px;
 }
 /* line 338, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginForm {
+body .fancybox-skin .loginFancybox .loginForm {
   background: #F7F7F7;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -880,7 +880,7 @@ html {
   padding: 30px;
 }
 /* line 346, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input {
+body .fancybox-skin .loginFancybox .loginForm .loginItem input {
   width: 368px;
   height: 50px;
   padding: 15px;
@@ -891,21 +891,21 @@ html {
   color: #9A9DA1;
 }
 /* line 356, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input:focus {
+body .fancybox-skin .loginFancybox .loginForm .loginItem input:focus {
   background: white;
   color: #5a5a5a;
   outline: none;
 }
 /* line 362, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input:hover {
+body .fancybox-skin .loginFancybox .loginForm .loginItem input:hover {
   border-color: #a0a0a0;
 }
 /* line 366, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginForm .loginItem input.filledOut {
+body .fancybox-skin .loginFancybox .loginForm .loginItem input.filledOut {
   color: #5a5a5a;
 }
 /* line 372, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginSubmit {
+body .fancybox-skin .loginFancybox .loginSubmit {
   width: 370;
   height: 57px;
   padding: 20px 30px 0px 30px;
@@ -914,7 +914,7 @@ html {
   border-bottom-left-radius: 4px;
 }
 /* line 380, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginSubmit button {
+body .fancybox-skin .loginFancybox .loginSubmit button {
   background-color: #4090BA;
   border-radius: 4px;
   color: white;
@@ -930,17 +930,17 @@ html {
   cursor: pointer;
 }
 /* line 395, ../sass/_main.scss */
-#lookgram .fancybox-skin .loginFancybox .loginSubmit button:hover {
+body .fancybox-skin .loginFancybox .loginSubmit button:hover {
   background-color: #3A82A8;
 }
 /* line 404, ../sass/_main.scss */
-#lookgram .upload-photo-page {
+body .upload-photo-page {
   width: 613px;
   margin: 0px;
   padding: 0px;
 }
 /* line 409, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-header {
+body .upload-photo-page .lightbox-header {
   background-image: -webkit-linear-gradient(top, #fffcfc, #f0eded);
   height: 46px;
   border-top-left-radius: 4px;
@@ -954,24 +954,24 @@ html {
   border-bottom: 1px solid #cccaca;
 }
 /* line 423, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content {
+body .upload-photo-page .lightbox-content {
   background: #fcf9f9;
 }
 /* line 426, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-button-container {
+body .upload-photo-page .lightbox-content .upload-button-container {
   height: 40px;
   border-bottom: 1px solid gainsboro;
   padding: 30px 30px 20px 30px;
 }
 /* line 432, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container {
+body .upload-photo-page .lightbox-content .upload-meta-container {
   position: relative;
   min-height: 183px;
   padding: 30px 30px 20px 30px;
   overflow: hidden;
 }
 /* line 438, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .image-preview {
+body .upload-photo-page .lightbox-content .upload-meta-container .image-preview {
   float: left;
   clear: none;
   width: 130px;
@@ -985,7 +985,7 @@ html {
   -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 /* line 451, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .image-preview img {
+body .upload-photo-page .lightbox-content .upload-meta-container .image-preview img {
   max-width: 170px;
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
   -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
@@ -993,13 +993,13 @@ html {
   border-radius: 3px;
 }
 /* line 460, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column {
+body .upload-photo-page .lightbox-content .upload-meta-container .right-column {
   float: left;
   clear: none;
   width: 375px;
 }
 /* line 466, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-description textarea {
+body .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-description textarea {
   width: 350px;
   height: 60px;
   padding: 6px 12px 6px 12px;
@@ -1012,23 +1012,23 @@ html {
   line-height: 23px;
 }
 /* line 478, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-description textarea:focus {
+body .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-description textarea:focus {
   border-color: #a4baca;
   background: #f5f7f9;
   outline: none;
   color: #141414;
 }
 /* line 487, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger {
+body .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger {
   display: block;
   margin-top: 20px;
 }
 /* line 491, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger input {
+body .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger input {
   width: 100px;
 }
 /* line 495, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger .add-tag {
+body .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-tagger .add-tag {
   border-radius: 3px;
   border: 1px solid #d1cdcd;
   background: #f2f0f0;
@@ -1038,37 +1038,37 @@ html {
   -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.8), inset 0 1px rgba(255, 255, 255, 0.35);
 }
 /* line 506, ../sass/_main.scss */
-#lookgram .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-post {
+body .upload-photo-page .lightbox-content .upload-meta-container .right-column .image-post {
   margin-top: 20px;
   font-size: 16px;
   font-weight: bold;
   padding: 10 15;
 }
 /* line 517, ../sass/_main.scss */
-#lookgram .footer {
+body .footer {
   width: 960px;
   padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 523, ../sass/_main.scss */
-#lookgram .footer li {
+body .footer li {
   float: left;
   margin-right: 20px;
 }
 /* line 527, ../sass/_main.scss */
-#lookgram .footer li a {
+body .footer li a {
   color: #3f729b;
   font-size: 13px;
   font-weight: bold;
   text-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
 }
 /* line 533, ../sass/_main.scss */
-#lookgram .footer li a:hover {
+body .footer li a:hover {
   text-decoration: underline;
 }
 /* line 539, ../sass/_main.scss */
-#lookgram .footer span {
+body .footer span {
   float: right;
   font-size: 13px;
   font-weight: bold;
@@ -1829,16 +1829,22 @@ html {
 }
 /* line 115, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .name a {
-  color: #8B8E91;
+  color: #B5B8BA;
   font-weight: bold;
 }
-/* line 121, ../sass/_vote-photo-element.scss */
+/* line 118, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info .name a:hover {
+  text-decoration: underline;
+  color: #a0a0a0;
+}
+/* line 125, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .date {
   position: absolute;
   top: 28px;
   left: 51px;
 }
-/* line 125, ../sass/_vote-photo-element.scss */
+/* line 129, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .date span {
   color: rgba(0, 0, 0, 0.4);
+  cursor: default;
 }
