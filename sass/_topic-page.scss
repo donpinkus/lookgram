@@ -5,10 +5,29 @@
 			padding-top: 70px;
 			width: 960px;
 
-			.vote-photo-element {
-				margin-top: 20px;
-				float: left;
+			.topic-page-title {
+				h2 {
+			  	width: 210px;
+			  	border-top: 1px solid rgba(0,0,0,0.1);
+			  	text-align: left;
+			  	a{
+			  		display: inline-block;
+			  		margin-top: 14px;
+			  		margin-bottom: 21px;
+						font-size: 21px;
+						color: #B5B8BA;
+
+						&:hover {
+							text-decoration: underline;
+							color: rgba(0,0,0,0.5);
+						}
+					}
+				}
 			}
+		}
+
+		.topic-page-content {
+
 		}
 	}
 }

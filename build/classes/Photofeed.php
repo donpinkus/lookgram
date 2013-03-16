@@ -145,8 +145,8 @@ class Photofeed {
 		global $firephp;
 		$column_title = implode(' - ', $topic);
 		
+		$column_link = 'topic.php?';
 		while ($value = current($topic)) {
-			$column_link = 'topic.php?';
 			$column_link .= key($topic) . '=' . $value . '&';
 			next($topic);
 		}

@@ -12,11 +12,11 @@ $(document).ready(function(){
 	});
 
 
-	var $container = $('.main');
+	var $container = $('.topic-page-content');
 	$container.imagesLoaded( function(){
 	  $container.masonry({
 	    itemSelector : '.masonry-container-hack',
-	    columnWidth : 238
+	    columnWidth : 240
 	  });
 	});
 

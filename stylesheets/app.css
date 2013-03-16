@@ -1603,7 +1603,7 @@ body .footer span {
 /* line 30, ../sass/_photo-feed.scss */
 #photofeed .main .photo-column h2 a:hover {
   text-decoration: underline;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 /* line 4, ../sass/_topic-page.scss */
@@ -1611,10 +1611,24 @@ body .footer span {
   padding-top: 70px;
   width: 960px;
 }
-/* line 8, ../sass/_topic-page.scss */
-#lookgram #topic .main .vote-photo-element {
-  margin-top: 20px;
-  float: left;
+/* line 9, ../sass/_topic-page.scss */
+#lookgram #topic .main .topic-page-title h2 {
+  width: 210px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+/* line 13, ../sass/_topic-page.scss */
+#lookgram #topic .main .topic-page-title h2 a {
+  display: inline-block;
+  margin-top: 14px;
+  margin-bottom: 21px;
+  font-size: 21px;
+  color: #B5B8BA;
+}
+/* line 20, ../sass/_topic-page.scss */
+#lookgram #topic .main .topic-page-title h2 a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* line 4, ../sass/_edit-profile.scss */
