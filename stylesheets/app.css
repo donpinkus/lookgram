@@ -1827,6 +1827,16 @@ body .footer span {
   font-size: 12px;
 }
 /* line 98, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info:hover .actor-photo {
+  transition: 120ms;
+  opacity: 1.0;
+}
+/* line 103, ../sass/_vote-photo-element.scss */
+.vote-photo-element .image-actor-info:hover .name a {
+  transition: 120ms;
+  color: #a0a0a0;
+}
+/* line 108, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .actor-photo {
   position: absolute;
   top: 7px;
@@ -1835,29 +1845,29 @@ body .footer span {
   width: 36px;
   opacity: 0.4;
 }
-/* line 111, ../sass/_vote-photo-element.scss */
+/* line 121, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .name {
   position: absolute;
   top: 7px;
   left: 51px;
 }
-/* line 115, ../sass/_vote-photo-element.scss */
+/* line 125, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .name a {
   color: #B5B8BA;
   font-weight: bold;
 }
-/* line 118, ../sass/_vote-photo-element.scss */
+/* line 128, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .name a:hover {
   text-decoration: underline;
   color: #a0a0a0;
 }
-/* line 125, ../sass/_vote-photo-element.scss */
+/* line 135, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .date {
   position: absolute;
   top: 28px;
   left: 51px;
 }
-/* line 129, ../sass/_vote-photo-element.scss */
+/* line 139, ../sass/_vote-photo-element.scss */
 .vote-photo-element .image-actor-info .date span {
   color: rgba(0, 0, 0, 0.4);
   cursor: default;

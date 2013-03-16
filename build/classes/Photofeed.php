@@ -126,7 +126,9 @@ class Photofeed {
 						</div>
 						<div class="image-actor-info">
 							<div class="actor-photo">
-								<img src="/images/profile-pic.jpeg" />
+								<a href="/profile.php?user_id=' . $photo->user_id . '">
+									<img src="/images/profile-pic.jpeg" />
+								</a>
 							</div>
 							<div class="name">
 								<a href="/profile.php?user_id=' . $photo->user_id . '">' . $photo->user_handle . '</a>

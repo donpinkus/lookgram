@@ -95,6 +95,16 @@
 		border-bottom: 1px solid #E0E0DF;
 		font-size: 12px;
 
+		&:hover .actor-photo {
+			transition: 120ms;
+			opacity: 1.0;
+		}
+
+		&:hover .name a {
+			transition: 120ms;
+			color: rgb(160,160,160);
+		}
+
 		.actor-photo {
 			position: absolute;
 			top: 7px;
