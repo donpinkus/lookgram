@@ -28,7 +28,7 @@
 		<div class="page">
 			<header class="top-nav">
 				<div class="wrapper">
-					<a href="/" class="home-button selected">
+					<a href="/" class="home-button">
 						<div>
 							<span class="entypo">&#8962;</span>
 						</div>
