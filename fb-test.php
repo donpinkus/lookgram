@@ -31,17 +31,17 @@
        . "&client_secret=" . $app_secret 
        . "&code="          . $code;
 
-     $response = file_get_contents($token_url);
-     $params = null;
-     parse_str($response, $params);
-     $_SESSION['access_token'] = $params['access_token'];
+		$response = file_get_contents($token_url);
+		$params = null;
+		parse_str($response, $params);
+		$_SESSION['access_token'] = $params['access_token'];
 
-     // test
-     $graph_url = "https://graph.facebook.com/me?access_token=" 
-       . $params['access_token'];
+		// test
+		$graph_url = "https://graph.facebook.com/me?access_token=" 
+		 . $params['access_token'];
 
-     $user = json_decode(file_get_contents($graph_url));
-     echo("Hello " . $user->name);
+		$user = json_decode(file_get_contents($graph_url));
+		echo("Hello " . $user->name);
      
 	} else {
 		echo("The state does not match. You may be a victim of CSRF.");

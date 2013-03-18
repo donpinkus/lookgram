@@ -10,6 +10,19 @@ window.fbAsyncInit = function() {
     xfbml      : true  // parse XFBML
   });
 
+  FB.getLoginStatus(function(response) {
+    if(response.status === 'connected') {
+      // connected
+      console.log('connected');
+    } else if (response.status === 'not_authorized') {
+      // not_authorized
+      console.log('not authorized');
+    } else {
+      // not_logged_in
+      console.log('not logged into facebook...');
+    }
+  });
+
   // Additional init code here
 
 };
