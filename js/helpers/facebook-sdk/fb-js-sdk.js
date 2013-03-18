@@ -17,6 +17,7 @@ window.fbAsyncInit = function() {
     } else if (response.status === 'not_authorized') {
       // not_authorized
       console.log('not authorized');
+      login();
     } else {
       // not_logged_in
       console.log('not logged into facebook...');
@@ -35,3 +36,14 @@ window.fbAsyncInit = function() {
    js.src = "//connect.facebook.net/en_US/all.js";
    ref.parentNode.insertBefore(js, ref);
  }(document));
+
+// Define the login function
+function login() {
+    FB.login(function(response) {
+        if (response.authResponse) {
+            // connected
+        } else {
+            // cancelled
+        }
+    });
+}
